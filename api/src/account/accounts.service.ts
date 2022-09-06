@@ -8,29 +8,30 @@ import { Accounts } from "./accounts.interface";
  * In-Memory Store
  */
 
- let accounts: Accounts = {
-    1: {
+ let accounts: Accounts = [
+    {
       id: 1,
       public_id: 'defwefe-erferferfve-weferfwef-wedfwe',
       status: 'pending',
       created_at: '2021-02-13',
       updated_at: ''
     },
-    2: {
+    {
       id: 2,
       public_id: 'defwefe-erferferfve-weferfwef-wedfwe',
       status: 'pending',
       created_at: '2021-02-13',
       updated_at: ''
     },
-    3: {
+    {
       id: 3,
       public_id: 'defwefe-erferferfve-weferfwef-wedfwe',
       status: 'pending',
       created_at: '2021-02-13',
       updated_at: ''
     }
-  };
+]
+  ;
 
 /**
  * Service Methods

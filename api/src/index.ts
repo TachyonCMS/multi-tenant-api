@@ -6,6 +6,8 @@
  import express from "express";
  import cors from "cors";
  import helmet from "helmet";
+
+ import { accountsRouter } from "./account/account.router";
  
  dotenv.config();
 
@@ -28,6 +30,7 @@
  app.use(helmet());
  app.use(cors());
  app.use(express.json());
+ app.use("/api/member/accounts", accountsRouter);
 
 /**
  * Server Activation
@@ -37,4 +40,3 @@
     console.log(`Listening on port ${PORT}`);
   });
 
-  
