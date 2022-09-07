@@ -4,6 +4,8 @@
 import { BaseAccount, Account } from "./account.interface";
 import { Accounts } from "./accounts.interface";
 
+import sql from '../db'
+
 /**
  * In-Memory Store
  */
@@ -117,6 +119,13 @@ export const remove = async (id: number): Promise<null | void> => {
  * 
  */
  export const findAll = async (): Promise<Accounts> => {
+
+    await sql`set search_path = members, common;`;
+
+    const accounts = await sql`
+    select
+      *
+    from account`;
 
     return accounts;
 };
