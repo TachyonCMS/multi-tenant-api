@@ -20,3 +20,19 @@ lb4 api
 loopbackBuild, Enable vscode, Enable docker, Enable repositories, Enable services
 ? Yarn is available. Do you prefer to use it by default? Yes
 ```
+
+## Create Model
+
+```sh
+lb4 model 
+```
+
+## Create Datasource
+
+```sh
+lb4 datasource
+```
+
+## Create Route
+
+## Create Controller
